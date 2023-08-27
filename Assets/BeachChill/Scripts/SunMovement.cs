@@ -29,12 +29,26 @@ public class SunMovement : MonoBehaviour
     void Update()
     {
         
-        while(transform.localPosition != endPoint.transform.localPosition) //While the sun is not at the destination, move it towards the destination at a set speed
+        if(transform.localPosition.z > endPoint.transform.localPosition.z) //While the sun is not at the destination, move it towards the destination at a set speed
         {
+            transform.localPosition = transform.localPosition - moveDir * movementSpeed * Time.deltaTime;
 
-            transform.localPosition = transform.position + moveDir * movementSpeed * Time.deltaTime;
-
+            if(transform.localPosition.z < endPoint.transform.localPosition.z) //if passed end point, set transform.position to end point.
+            {
+                transform.localPosition = endPoint.transform.localPosition;
+            }
         }
+
+        if(transform.localPosition.z < endPoint.transform.localPosition.z) //While the sun is not at the destination, move it towards the destination at a set speed
+        {
+            transform.localPosition = transform.localPosition + moveDir * movementSpeed * Time.deltaTime;
+
+            if(transform.localPosition.z > endPoint.transform.localPosition.z) // if passed end point, set transform.position to end point.
+            {
+                transform.localPosition = endPoint.transform.localPosition;
+            }
+        }
+        
         
 
     }
