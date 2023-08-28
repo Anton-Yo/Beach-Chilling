@@ -1,6 +1,6 @@
 {
     "PreviousScene": "Assets/BeachChill/Scenes/TestScene.unity",
-    "TargetScene": "Assets/Examples/Scenes/Example.unity",
+    "TargetScene": "Assets/BeachChill/Scenes/TestScene.unity",
     "AdditionalReferences": [],
     "SelectedPlatform": 0
 }
