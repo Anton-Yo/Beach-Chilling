@@ -519,20 +519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a44c6c68e371f14388dce478c41040f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 1.077431
-  Y: 1
-  Z: -0.07495025
-  W: 0
-  Offset: 0.9323733
-  Renderer: {fileID: 1900284508}
-  Force58: 0
-  Force63: 0
-  Force68: 0
-  Debug: 0
-  OculusIpdAtStart: 0
-  OculusIpdCurrently: 0
-  DeviceModel: 0
-  DeviceModelNameFromUnity: 
 --- !u!4 &851882267
 Transform:
   m_ObjectHideFlags: 0
@@ -806,12 +792,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1900284506}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1900284508 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 638330112548520000, guid: 635e5fc3708d43640958ab15f7b02b51,
-    type: 3}
-  m_PrefabInstance: {fileID: 1900284506}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2038825751 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4614822932832695012, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
@@ -900,11 +880,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3473043119503296450}
     m_Modifications:
-    - target: {fileID: 1260162970045296579, guid: 22276a8657744e04cba8ad0a2caf4195,
-        type: 3}
-      propertyPath: m_Name
-      value: VRAvatar
-      objectReference: {fileID: 0}
     - target: {fileID: 1260162969423114810, guid: 22276a8657744e04cba8ad0a2caf4195,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -959,6 +934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260162970045296579, guid: 22276a8657744e04cba8ad0a2caf4195,
+        type: 3}
+      propertyPath: m_Name
+      value: VRAvatar
       objectReference: {fileID: 0}
     - target: {fileID: 1260162968766363322, guid: 22276a8657744e04cba8ad0a2caf4195,
         type: 3}
@@ -1232,7 +1212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8066ed3b2e9e4c64f9c11142d910e9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildType: 1
+  BuildType: 2
   EditorType: 1
 --- !u!224 &3934831371284879100
 RectTransform:
@@ -1375,16 +1355,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3473043119503296450}
     m_Modifications:
-    - target: {fileID: 4614822932832695013, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
-        type: 3}
-      propertyPath: m_Name
-      value: CanvasLoadingBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614822932832695013, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4614822932832695016, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1489,6 +1459,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614822932832695013, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasLoadingBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614822932832695013, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4614822932832695017, guid: 702ba41ac8640ff4dbbfc85b033ebc3e,
         type: 3}
