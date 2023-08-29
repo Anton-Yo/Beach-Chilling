@@ -344,7 +344,7 @@ MonoBehaviour:
   endPoint: {fileID: 4091514607917887132}
   movementSpeed: 10
   SunSpeedBasis: 1
-  timeBuffer: 2
+  timeBuffer: 1
 --- !u!1 &7872232818657590219
 GameObject:
   m_ObjectHideFlags: 0
