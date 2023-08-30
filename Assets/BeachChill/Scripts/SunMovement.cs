@@ -57,21 +57,23 @@ public class SunMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentSunPos = sun.transform.position; //grab the transform.position value once cos its easier
-       
-            if(currentSunPos.y > targetPos.y)
-            {
-                sun.transform.position = Vector3.MoveTowards(sun.transform.position, endPoint.transform.position, movementSpeed * Time.deltaTime);
-            }
+        if(sun.transform.position.y != targetPos.y) //stop checking for stuff once sun has reached endpoint
+        {
+            currentSunPos = sun.transform.position; //grab the transform.position value once cos its easier
+        
+                if(currentSunPos.y > targetPos.y)
+                {
+                    sun.transform.position = Vector3.MoveTowards(sun.transform.position, endPoint.transform.position, movementSpeed * Time.deltaTime);
+                }
 
 
-            if(currentSunPos.y <= targetPos.y) //check if it will have gone past the end point
-            {
-                currentSunPos = targetPos;
-                Debug.Log("Sun has set and has turned to red");
-                sun.GetComponent<Renderer>().material.color = Color.red;
-            }
-      
+                if(currentSunPos.y <= targetPos.y) //check if it will have gone past the end point
+                {
+                    currentSunPos = targetPos;
+                    Debug.Log("Sun has set and has turned to red");
+                    sun.GetComponent<Renderer>().material.color = Color.red;
+                }
         }
+    }
     
 }

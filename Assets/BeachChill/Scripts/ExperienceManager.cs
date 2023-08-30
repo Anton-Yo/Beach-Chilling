@@ -48,12 +48,19 @@ public class ExperienceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        experienceTimer -= Time.deltaTime;
 
-        if(experienceTimer < 0)
+        if(experienceTimer > 0)
         {
-            fadeToBlack.SetActive(true);
+            experienceTimer -= Time.deltaTime;
+
+            if(experienceTimer <= 0)
+            {
+                fadeToBlack.SetActive(true);
+            }
         }
+        
+
+        
     }
 
 }
