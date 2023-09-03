@@ -32,12 +32,12 @@ Material:
     - _Depth: 13.88
     - _Displacement: 3.42
     - _FoamAmount: 0.001
-    - _FoamCutoff: 0.98
+    - _FoamCutoff: 0.96
     - _FoamScale: 34.5
-    - _FoamSpeed: 0.94
+    - _FoamSpeed: -0.41
     - _NormalStrength: 0.335
-    - _Smoothness: 0.736
-    - _Strength: 0.086
+    - _Smoothness: 0.594
+    - _Strength: 0.141
     - _WaterDepth: 43.99
     m_Colors:
     - _DeepColor: {r: 0, g: 0.7254902, b: 0.8313726, a: 1}
