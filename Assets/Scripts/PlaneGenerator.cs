@@ -11,6 +11,7 @@ public class PlaneGenerator : MonoBehaviour
 
     [SerializeField] Vector2 planeSize = new Vector2(1,1);
     [SerializeField] int planeResolution = 1;
+    [SerializeField] int waveStrength = 1;
 
     List<Vector3> vertices;
     List<int> triangles;
@@ -78,7 +79,7 @@ public class PlaneGenerator : MonoBehaviour
         for (int i = 0; i < vertices.Count; i++)
         {
             Vector3 vertex = vertices[i];
-            vertex.y = Mathf.Sin(time + vertex.x);
+            vertex.y = Mathf.Sin(time / waveStrength + vertex.x);
             vertices[i] = vertex;
         }
     }
@@ -91,7 +92,7 @@ public class PlaneGenerator : MonoBehaviour
         {
             Vector3 vertex = vertices[i];
             float distanceFromCenter = (vertex-origin).magnitude;
-            vertex.y = Mathf.Sin(time + distanceFromCenter);
+            vertex.y = Mathf.Sin(time / waveStrength + distanceFromCenter);
             vertices[i] = vertex;
         }
     }

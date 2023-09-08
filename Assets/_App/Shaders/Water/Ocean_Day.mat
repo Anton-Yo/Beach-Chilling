@@ -69,8 +69,8 @@ Material:
     - _RimPower1: 20
     - _RotationAngle: 0
     - _SeaFoamTile: 24.2
-    - _Smoothness: 0.239
-    - _WaveHeight: 0
+    - _Smoothness: 0.682
+    - _WaveHeight: 0.39
     - _WaveSpeed: 0.05
     - _WaveTile: 0.25
     - _WorldspaceTile: 0.1
@@ -81,7 +81,7 @@ Material:
     - _PivotPoint: {r: 0, g: 0, b: 0, a: 0}
     - _PosOffset: {r: 0, g: 0, b: 0, a: 0}
     - _RimColor: {r: 0, g: 0.8018868, b: 0.60866094, a: 1}
-    - _TopColor: {r: 0.39773938, g: 0.6892115, b: 0.7735849, a: 1}
+    - _TopColor: {r: 0.39773935, g: 0.6892115, b: 0.7735849, a: 1}
     - _Vector0: {r: 0, g: 0, b: 0, a: 0}
     - _WaveDir: {r: 1, g: 0, b: 0, a: 0}
     - _WaveStretch: {r: 0.15, g: 0.02, b: 0, a: 0}
