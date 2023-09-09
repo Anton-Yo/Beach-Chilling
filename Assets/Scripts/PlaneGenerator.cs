@@ -11,7 +11,7 @@ public class PlaneGenerator : MonoBehaviour
 
     [SerializeField] Vector2 planeSize = new Vector2(1,1);
     [SerializeField] int planeResolution = 1;
-    [SerializeField] int waveStrength = 1;
+    [SerializeField] float waveStrength = 1;
 
     List<Vector3> vertices;
     List<int> triangles;
@@ -27,6 +27,7 @@ public class PlaneGenerator : MonoBehaviour
     void Update()
     {
         planeResolution = Mathf.Clamp(planeResolution, 1, 50);
+        waveStrength = Mathf.Clamp(waveStrength, 0.1f, 5);
 
         GeneratePlane(planeSize,planeResolution);
         LeftToRightSine(Time.timeSinceLevelLoad);
