@@ -52,7 +52,7 @@ Material:
     - _WavesSpeed: 0.1
     - __dirty: 0
     m_Colors:
-    - _DeepWater: {r: 0.21537915, g: 0.6362711, b: 0.8301887, a: 0}
-    - _ShallowWater: {r: 0.25177997, g: 0.5294456, b: 0.7735849, a: 0}
+    - _DeepWater: {r: 0.21537912, g: 0.6362711, b: 0.8301887, a: 0}
+    - _ShallowWater: {r: 0.2517799, g: 0.5294456, b: 0.7735849, a: 0}
     - _Vector0: {r: 1, g: 0.2, b: 0, a: 0}
     - _WaveStretch: {r: 0.23, g: 0.01, b: 0, a: 0}
