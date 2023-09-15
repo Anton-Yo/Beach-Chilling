@@ -31,7 +31,10 @@ Material:
     - _ColorFernel: 0.68
     - _ColorFernelFoam: 1
     - _Cutoff: 0.5
+    - _Depth: 0.45
     - _Displacement: 0
+    - _EdgeDistance: 0.14
+    - _EdgePower: -25.3
     - _Gloss: 0.257
     - _Metallic: 0
     - _NormalBlendStrength: 0.2
@@ -39,10 +42,13 @@ Material:
     - _NormalMap2Strength: 0.472
     - _Opacity: 0.5
     - _Outline: 0.09
+    - _RefractionAmount: 0.1
     - _UV1Tiling: 1
     - _UV2Tiling: 1
     - _UVScale: 200
     - _Vertex: 0
+    - _WaveSpeed: 0
+    - _WaveTile: 0
     - _node_214: 1
     m_Colors:
     - _ColorDeep: {r: 0, g: 0.9647059, b: 1, a: 1}
