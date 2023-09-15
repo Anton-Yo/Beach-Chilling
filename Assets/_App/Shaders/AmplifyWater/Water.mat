@@ -36,23 +36,31 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Depth: 315.23
-    - _EdgeDistance: 70.33
+    - _Depth: 163.2
+    - _EdgeDistance: 87.43
     - _EdgeFoamTile: 0.5
     - _EdgeLength: 15
-    - _EdgePower: 0.107
+    - _EdgePower: 0.143
     - _FoamMask: 0
     - _NormalSpeed: 0.1
-    - _NormalStrength: 0.099
+    - _NormalStrength: 0.071
     - _NormalTile: 0.01
+    - _Opacity: 1.92
+    - _RefractAmount: 0.1
     - _SeaFoamTile: 1
     - _Smoothness: 0.99
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
     - _WaveHeight: 8.5
     - _WaveTile: 0.03
     - _WavesSpeed: 0.1
     - __dirty: 0
     m_Colors:
-    - _DeepWater: {r: 0.21537912, g: 0.6362711, b: 0.8301887, a: 0}
-    - _ShallowWater: {r: 0.2517799, g: 0.5294456, b: 0.7735849, a: 0}
+    - _DeepWater: {r: 0.21537891, g: 0.6362711, b: 0.8301887, a: 0}
+    - _ShallowWater: {r: 0.25177968, g: 0.5294456, b: 0.7735849, a: 0}
     - _Vector0: {r: 1, g: 0.2, b: 0, a: 0}
     - _WaveStretch: {r: 0.23, g: 0.01, b: 0, a: 0}
