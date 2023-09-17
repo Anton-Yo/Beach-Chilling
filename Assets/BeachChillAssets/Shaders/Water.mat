@@ -23,7 +23,15 @@ Material:
         m_Texture: {fileID: 2800000, guid: caecb7663e614c0e8d1cf595085ee759, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _node_3361:
+        m_Texture: {fileID: 2800000, guid: c993fdaad6cf2fd4ea4b85323f3f122a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 1.41, y: 0}
     - _node_6031:
+        m_Texture: {fileID: 2800000, guid: 55e743f71f373c04eab68d3ace48124c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_7278:
         m_Texture: {fileID: 2800000, guid: 55e743f71f373c04eab68d3ace48124c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -32,22 +40,25 @@ Material:
     - _ColorFernelFoam: 1
     - _Cutoff: 0.5
     - _Displacement: 0
+    - _Distance: 0.1
     - _Gloss: 0.257
     - _Metallic: 0
     - _NormalBlendStrength: 0.2
     - _NormalMap1Strength: 0.267
     - _NormalMap2Strength: 0.472
-    - _Opacity: 0.5
+    - _Opacity: 0.774
     - _Outline: 0.09
     - _UV1Tiling: 1
     - _UV2Tiling: 1
     - _UVScale: 200
     - _Vertex: 0
+    - _node_2044: 5.22
     - _node_214: 1
+    - _node_4781: 0.2
     m_Colors:
     - _ColorDeep: {r: 0, g: 0.9647059, b: 1, a: 1}
-    - _ColorShallow: {r: 0.29411766, g: 0.64705884, b: 0.65882355, a: 1}
-    - _FoamColor: {r: 0.6839622, g: 0.95371217, b: 1, a: 1}
+    - _ColorShallow: {r: 0.29411763, g: 0.64705884, b: 0.65882355, a: 1}
+    - _FoamColor: {r: 0.740566, g: 0.903949, b: 1, a: 1}
     - _OutlineColor: {r: 0.8349056, g: 0.8576183, b: 1, a: 1}
     - _UV1Animator: {r: 0.18, g: 0.28, b: 0, a: 0}
     - _UV2Animator: {r: 0, g: -0.57, b: 0, a: 0}
