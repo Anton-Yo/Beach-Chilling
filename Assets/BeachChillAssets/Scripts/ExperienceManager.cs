@@ -50,11 +50,11 @@ public class ExperienceManager : MonoBehaviour
     void Update()
     {
 
-        if(experienceTimer > 0 && !noFinish)
+        if(experienceTimer > 0)
         {
             experienceTimer -= Time.deltaTime;
 
-            if(experienceTimer <= 0)
+            if(experienceTimer <= 0 && !noFinish)
             {
                 fadeToBlack.SetActive(true);
             }
