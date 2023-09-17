@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: 2e38d42da4e9df943a8b97c4181fdc9b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: c993fdaad6cf2fd4ea4b85323f3f122a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SeaFoam:
+        m_Texture: {fileID: 2800000, guid: 55e743f71f373c04eab68d3ace48124c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: c993fdaad6cf2fd4ea4b85323f3f122a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Depth: 163.2
+    - _EdgeDistance: 87.43
+    - _EdgeFoamTile: 0.5
+    - _EdgeLength: 15
+    - _EdgePower: 0.143
+    - _FoamMask: 0
+    - _NormalSpeed: 0.1
+    - _NormalStrength: 0.071
+    - _NormalTile: 0.01
+    - _Opacity: 1.92
+    - _RefractAmount: 0.1
+    - _SeaFoamTile: 1
+    - _Smoothness: 0.99
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
+    - _WaveHeight: 8.5
+    - _WaveTile: 0.03
+    - _WavesSpeed: 0.1
+    - __dirty: 0
+    m_Colors:
+    - _DeepWater: {r: 0.21537891, g: 0.6362711, b: 0.8301887, a: 0}
+    - _ShallowWater: {r: 0.25177968, g: 0.5294456, b: 0.7735849, a: 0}
+    - _Vector0: {r: 1, g: 0.2, b: 0, a: 0}
+    - _WaveStretch: {r: 0.23, g: 0.01, b: 0, a: 0}
