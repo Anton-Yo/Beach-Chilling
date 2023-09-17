@@ -58,7 +58,7 @@ Material:
     - _WaveHeight: 8.5
     - _WaveTile: 0.03
     - _WavesSpeed: 0.1
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _DeepWater: {r: 0.21537891, g: 0.6362711, b: 0.8301887, a: 0}
     - _ShallowWater: {r: 0.25177968, g: 0.5294456, b: 0.7735849, a: 0}
