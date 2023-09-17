@@ -7,6 +7,7 @@ public class ExperienceManager : MonoBehaviour
 {
 
     [SerializeField] private float experienceLength;
+    [SerializeField] private bool noFinish = false;
     public float ExperienceLength
     {
         get { return experienceLength;}
@@ -49,7 +50,7 @@ public class ExperienceManager : MonoBehaviour
     void Update()
     {
 
-        if(experienceTimer > 0)
+        if(experienceTimer > 0 && !noFinish)
         {
             experienceTimer -= Time.deltaTime;
 
