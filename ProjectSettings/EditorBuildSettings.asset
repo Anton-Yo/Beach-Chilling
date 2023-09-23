@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BeachChillAssets/Scenes/TestScene.unity
     guid: 49f17c8dd202feb46941222621afe22b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BeachTest.unity
     guid: fda22909185e61c4cb034f9dba165c19
+  - enabled: 1
+    path: Assets/Scenes/CircleTest.unity
+    guid: 46720369b0423be4bb6bd0d619c5ccd4
   m_configObjects: {}
