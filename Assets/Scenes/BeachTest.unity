@@ -351,7 +351,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79b1b36c0fc4974eb8727b80f5754d3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -477,7 +477,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9431694223c16a341bf47fbc2a9d6de5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   birdSound: {fileID: 247866865}
   firstBirdSound: 2
   minTimeBetweenBird: 15
-  maxTimeBetweenBird: 20
+  maxTimeBetweenBird: 30
   speakingSound: {fileID: 1452646142}
 --- !u!4 &1641093305
 Transform:
