@@ -11,6 +11,7 @@ public class VisualCircleMove : MonoBehaviour
     [SerializeField] private RectTransform button;
     [SerializeField] private float delayStartTimer;
     private float visualTimer = 0;
+    [SerializeField] private bool pauseTimer;
     private bool circleFilled = false;
     private float buttonTimer = 0;
     private float buttonStartLocation;
@@ -23,11 +24,14 @@ public class VisualCircleMove : MonoBehaviour
     
     void Update()
     {
-        delayStartTimer-=Time.deltaTime;
-        if(delayStartTimer<=0)
+        if(!pauseTimer)
         {
-            TimerSetup();
-            CircleChange(visualTimer);
+            delayStartTimer-=Time.deltaTime;
+            if(delayStartTimer<=0)
+            {
+                TimerSetup();
+                CircleChange(visualTimer);
+            }
         }
     }
 
