@@ -46,7 +46,7 @@ Material:
     - _NormalBlendStrength: 0.2
     - _NormalMap1Strength: 1
     - _NormalMap2Strength: 1
-    - _Opacity: 0.672
+    - _Opacity: 0.75
     - _Outline: 0.09
     - _UV1Tiling: 1
     - _UV2Tiling: 1
