@@ -15,6 +15,9 @@ public class ExperienceManager : MonoBehaviour
 
     private float experienceTimer;
 
+    [SerializeField] private float timeB4VisualShows;
+    [SerializeField] private GameObject visualCircle;
+
     static private ExperienceManager instance;
     static public ExperienceManager Instance
     {
@@ -38,6 +41,7 @@ public class ExperienceManager : MonoBehaviour
     void Start()
     {
         experienceTimer = experienceLength;
+        StartCoroutine(ShowVisualCorountine());
 
         if(fadeToBlack.activeSelf)
         {
@@ -58,10 +62,13 @@ public class ExperienceManager : MonoBehaviour
             {
                 fadeToBlack.SetActive(true);
             }
-        }
-        
+        } 
+    }
 
-        
+    private IEnumerator ShowVisualCorountine()
+    {
+        yield return new WaitForSeconds(timeB4VisualShows);
+        visualCircle.SetActive(true);
     }
 
 }

@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     private float birdTimer = 0f;
 
     [SerializeField] private AudioSource speakingSound;
+    [SerializeField] private float timeB4ScriptStarts;
 
     private bool playBirdSound = false;
 
@@ -26,6 +27,7 @@ public class AudioManager : MonoBehaviour
     {
         backgroundMusic.Play();
         waveSounds.Play();
+        StartCoroutine(ScriptStartCorountine());
         birdTimer = firstBirdSound;
         
        // InvokeRepeating("PlayBirdSound", firstBirdSound, Random.Range(minTimeBetweenBird, maxTimeBetweenBird));
@@ -47,18 +49,19 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    // private void PlayBirdSound()
-    // {
-    //     birdSound.Play();
-    // }
-
     private IEnumerator BirdSoundCoroutine()
     {   
-        while(playBirdSound) //keep playing bird soundd ever x 'WaitForSeconds'.
+        while(playBirdSound) //keep playing bird sound ever x 'WaitForSeconds'.
         {
             birdSound.Play();
             Debug.Log("Bird sound played");
             yield return new WaitForSeconds(Random.Range(minTimeBetweenBird, maxTimeBetweenBird));
         }
+    }
+
+    private IEnumerator ScriptStartCorountine()
+    {
+        yield return new WaitForSeconds(timeB4ScriptStarts);
+        speakingSound.Play();
     }
 }
