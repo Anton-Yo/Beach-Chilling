@@ -597,9 +597,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9431694223c16a341bf47fbc2a9d6de5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.35
+  m_Volume: 0.15
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2061,7 +2061,12 @@ PrefabInstance:
     - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
         type: 3}
       propertyPath: timeB4VisualShows
-      value: 14
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
+        type: 3}
+      propertyPath: noFinish
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 890aebee9e5468f478f00460505cdfcf, type: 3}
@@ -3450,7 +3455,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
