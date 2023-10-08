@@ -2050,19 +2050,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
         type: 3}
-      propertyPath: visualCircle
-      value: 
-      objectReference: {fileID: 863684766}
-    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
-        type: 3}
       propertyPath: experienceLength
       value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
         type: 3}
-      propertyPath: timeB4VisualShows
-      value: 14
+      propertyPath: noFinish
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
+        type: 3}
+      propertyPath: timeB4VisualShows
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
+        type: 3}
+      propertyPath: visualCircle
+      value: 
+      objectReference: {fileID: 863684766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 890aebee9e5468f478f00460505cdfcf, type: 3}
 --- !u!1001 &1087397784

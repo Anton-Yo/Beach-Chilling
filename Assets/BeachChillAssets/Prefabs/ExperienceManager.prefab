@@ -376,6 +376,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experienceLength: 60
+  noFinish: 1
+  timeB4VisualShows: 270
+  visualCircle: {fileID: 0}
   fadeToBlack: {fileID: 4919491472616413481}
 --- !u!1 &8773340636441712497
 GameObject:

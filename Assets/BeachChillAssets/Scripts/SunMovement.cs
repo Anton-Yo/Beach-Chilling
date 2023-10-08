@@ -18,7 +18,7 @@ public class SunMovement : MonoBehaviour
         OverallTime
     }
     [SerializeField] private sunSpeedBasis SunSpeedBasis;
-    [SerializeField] private  float timeBuffer = 1;
+    //[SerializeField] private  float timeBuffer = 1; //does nothing rn
 
     private Vector3 currentSunPos = new Vector3(0,0,0);
 
@@ -47,7 +47,7 @@ public class SunMovement : MonoBehaviour
             break;
 
             case(sunSpeedBasis.OverallTime):
-                movementSpeed = Vector3.Distance(startPoint.transform.position, endPoint.transform.position)/(ExperienceManager.Instance.ExperienceLength - timeBuffer); //calc movement speed of sun if it is to reach the endPoint by end of experience
+                movementSpeed = Vector3.Distance(startPoint.transform.position, endPoint.transform.position)/(ExperienceManager.Instance.ExperienceLength); //calc movement speed of sun if it is to reach the endPoint by end of experience
             break;
         }
 
