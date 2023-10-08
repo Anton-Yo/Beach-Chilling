@@ -3349,8 +3349,8 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.87266463
-      minScalar: -0.87266463
+      scalar: 0.2617994
+      minScalar: -0.2617994
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7528,6 +7528,7 @@ MonoBehaviour:
   minTimeBetweenBird: 15
   maxTimeBetweenBird: 20
   speakingSound: {fileID: 1340486606}
+  timeB4ScriptStarts: 0
 --- !u!4 &1373118226
 Transform:
   m_ObjectHideFlags: 0
@@ -8837,8 +8838,8 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.87266463
-      minScalar: -0.87266463
+      scalar: 0.2617994
+      minScalar: -0.2617994
       maxCurve:
         serializedVersion: 2
         m_Curve:
