@@ -98,10 +98,12 @@ public class AudioManager : MonoBehaviour
             {
                 if(Random.Range(0f,1f) > 0.5f)
                 {
+                    treeSoundX1.pitch = 1f + Random.Range(-0.2f, 0.2f);
                     treeSoundX1.Play();
                 }
                 else
                 {
+                    treeSoundX2.pitch = 1f + Random.Range(-0.2f, 0.2f);
                     treeSoundX2.Play();
                 }
             }
