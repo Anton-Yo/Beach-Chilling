@@ -60,7 +60,8 @@ public class ExperienceManager : MonoBehaviour
 
             if(experienceTimer <= 0 && !noFinish)
             {
-                fadeToBlack.SetActive(true);
+                Debug.Log("Experience Ended");
+                Application.Quit();
             }
         } 
     }
