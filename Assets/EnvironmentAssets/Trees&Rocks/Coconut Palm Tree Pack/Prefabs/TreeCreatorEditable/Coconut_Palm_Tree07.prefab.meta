@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: cd04206a30c78e84fbc449686e6b254c
+guid: 29250b5dcc83dab4fa073586e52b8a3e
 labels:
 - Vegetation
 - CoconutPalmTreePack
-NativeFormatImporter:
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: coconut_palm_tree
   assetBundleVariant: 
