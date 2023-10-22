@@ -44,8 +44,8 @@ Material:
     - _Gloss: 0.337
     - _Metallic: 0
     - _NormalBlendStrength: 0.2
-    - _NormalMap1Strength: 1
-    - _NormalMap2Strength: 1
+    - _NormalMap1Strength: 0.3
+    - _NormalMap2Strength: 0.1
     - _Opacity: 0.75
     - _Outline: 0.09
     - _UV1Tiling: 1
