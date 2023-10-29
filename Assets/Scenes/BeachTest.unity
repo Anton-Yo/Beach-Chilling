@@ -384,9 +384,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b768a45438327904e9df8dd11f395262, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c4e99a32d0eb07145b68229bc47bb2cc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7517,9 +7517,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 43c19211043675242be4960e43e81a9a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7f806a321b8140444ac753d5e5e3d330, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10268,7 +10268,7 @@ MonoBehaviour:
   minTimeBetweenBird: 10
   maxTimeBetweenBird: 15
   timeB4ScriptStarts: 5
-  treeRustleTime: 10
+  treeRustleTime: 8
 --- !u!4 &1641093305
 Transform:
   m_ObjectHideFlags: 0
