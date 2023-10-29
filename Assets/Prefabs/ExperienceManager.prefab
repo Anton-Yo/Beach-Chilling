@@ -375,9 +375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476bb0d56cf826e4d964bf906da4ca87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experienceLength: 60
-  noFinish: 1
-  timeB4VisualShows: 270
+  experienceLength: 250
+  noFinish: 0
+  timeB4VisualShows: 16
   visualCircle: {fileID: 0}
   fadeToBlack: {fileID: 4919491472616413481}
 --- !u!1 &8773340636441712497

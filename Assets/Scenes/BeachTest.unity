@@ -7746,7 +7746,7 @@ MonoBehaviour:
   circleIndicator: {fileID: 1777371772}
   circleIndicatorSpeed: 36
   button: {fileID: 670427654}
-  delayStartTimer: 10.4
+  delayStartTimer: 6
   pauseTimer: 0
 --- !u!114 &863684769
 MonoBehaviour:
@@ -8578,18 +8578,8 @@ PrefabInstance:
       objectReference: {fileID: 863684766}
     - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
         type: 3}
-      propertyPath: experienceLength
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
-        type: 3}
       propertyPath: timeB4VisualShows
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919491473634399515, guid: 890aebee9e5468f478f00460505cdfcf,
-        type: 3}
-      propertyPath: noFinish
-      value: 0
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 890aebee9e5468f478f00460505cdfcf, type: 3}
@@ -9708,7 +9698,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 721192305bb12ca45b088f5b52cb2fc7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 777290e8828da524abcc9fd9e4bd4103, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15758,10 +15748,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5dc9332973a60134f857335aded1b510, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
