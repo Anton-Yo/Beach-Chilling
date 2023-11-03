@@ -41,12 +41,12 @@ Material:
     - _Cutoff: 0.5
     - _Displacement: 0
     - _Distance: 0.1
-    - _Gloss: 0.337
+    - _Gloss: 0
     - _Metallic: 0
     - _NormalBlendStrength: 0.2
-    - _NormalMap1Strength: 0.3
-    - _NormalMap2Strength: 0.1
-    - _Opacity: 0.75
+    - _NormalMap1Strength: 0.2
+    - _NormalMap2Strength: 0.5
+    - _Opacity: 1
     - _Outline: 0.09
     - _UV1Tiling: 1
     - _UV2Tiling: 1
