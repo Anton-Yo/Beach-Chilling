@@ -56,22 +56,22 @@ Material:
     - _Float3: 1.61
     - _FoamNoiseTiling: 2000
     - _NormalPanSpeed: 0.01
-    - _NormalStrength: 0.31
+    - _NormalStrength: 0.032
     - _RimPower: 20.69
     - _RimPower1: 20
     - _RotationAngle: -0.64
     - _SeaFoamTile: 2000
     - _Smoothness: 0.45
-    - _WaveHeight: 0.003
+    - _WaveHeight: 3
     - _WaveSpeed: 0.1
-    - _WaveTile: 3
-    - _WorldspaceTile: 75
+    - _WaveTile: 0.5
+    - _WorldspaceTile: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0, g: 0.2075, b: 0.3679245, a: 1}
+    - _BottomColor: {r: 0, g: 0.92583585, b: 1, a: 1}
     - _Color0: {r: 0, g: 0.7264151, b: 0.18160377, a: 1}
     - _PosOffset: {r: 0.39, g: 0, b: 0, a: 0}
-    - _RimColor: {r: 0.39035243, g: 0.5008615, b: 0.6415094, a: 1}
-    - _TopColor: {r: 0.09416164, g: 0.5749999, b: 0.8679245, a: 1}
+    - _RimColor: {r: 1, g: 0.20312497, b: 0, a: 1}
+    - _TopColor: {r: 0.5801887, g: 1, b: 0.8474588, a: 1}
     - _WaveDir: {r: 0.77, g: 0, b: 0, a: 0}
     - _WaveStretch: {r: 40, g: 53.5, b: 0, a: 0}

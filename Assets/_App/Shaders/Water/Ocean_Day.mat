@@ -80,7 +80,7 @@ Material:
     - _Color0: {r: 0, g: 0.7264151, b: 0.18160377, a: 1}
     - _PivotPoint: {r: 0, g: 0, b: 0, a: 0}
     - _PosOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _RimColor: {r: 1, g: 0.6881263, b: 0.031372547, a: 1}
+    - _RimColor: {r: 1, g: 0.227451, b: 0, a: 1}
     - _TopColor: {r: 0, g: 0.8879358, b: 0.9150943, a: 1}
     - _Vector0: {r: 0, g: 0, b: 0, a: 0}
     - _WaveDir: {r: 0, g: 1, b: 0, a: 0}
