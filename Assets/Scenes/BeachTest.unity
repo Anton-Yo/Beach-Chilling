@@ -1597,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b99b75f25cc67488d977a879d9f8b7, type: 3}
@@ -7086,7 +7086,7 @@ PrefabInstance:
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b99b75f25cc67488d977a879d9f8b7, type: 3}
@@ -7456,7 +7456,7 @@ PrefabInstance:
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
@@ -8063,7 +8063,7 @@ GameObject:
   - component: {fileID: 619715884}
   - component: {fileID: 619715883}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8100,7 +8100,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e56acf18f4b0704a96224aeb9bd642c, type: 2}
+  - {fileID: 2100000, guid: 3cff94ea628019846a668e4598d39972, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16973,9 +16973,6 @@ MonoBehaviour:
   maxTimeBetweenBird: 15
   timeB4ScriptStarts: 5
   treeRustleTime: 8
-  stopBirdSound: 30
-  stopWindSound: 20
-  reduceVolumeOfAllSounds: 30
 --- !u!4 &1641093305
 Transform:
   m_ObjectHideFlags: 0
@@ -17124,7 +17121,7 @@ PrefabInstance:
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5814533876172125052, guid: f9b99b75f25cc67488d977a879d9f8b7,
         type: 3}
