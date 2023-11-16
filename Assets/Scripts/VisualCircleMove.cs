@@ -11,20 +11,26 @@ public class VisualCircleMove : MonoBehaviour
     [SerializeField] private RectTransform button;
     [SerializeField] private float delayStartTimer;
     [SerializeField] private bool pauseTimer;
+    
+    [Header("Fade Setup")]
     [SerializeField] private CanvasGroup circleGroup;
+    [SerializeField] private float visualfadeInTimePerSecond = 3;
+    [SerializeField] private float visualfadeOutTimePerSecond = 3;
+    [SerializeField] private bool circleVisual = true;
+    
+    [Header("Text Fade Setup")]
+    [SerializeField] private bool textFade;
     [SerializeField] private CanvasGroup inText;
     [SerializeField] private CanvasGroup outText;
-    [SerializeField] private float fadeInTime;
+    [SerializeField] private float outTextFadeOutSpeed = 5; // per second
 
     private float visualTimer = 0;
     private bool circleFilled = false;
     private float buttonTimer = 0;
     private float buttonStartLocation;
-    private bool fadeIn = true;
     private bool inTextFadeIn = false;
     private bool outTextFadeOut = false;
-    private float outTextFadeOutSpeed = 0.2f;
-
+    
     void Start()
     {
         buttonStartLocation = button.localEulerAngles.z;
@@ -41,14 +47,14 @@ public class VisualCircleMove : MonoBehaviour
             {
                 TimerSetup();
                 CircleChange(visualTimer);
-                TextChange();
+                if(textFade)
+                {
+                    TextChange();
+                }
             }
         }
         
-        if(fadeIn)
-        {
-            circleGroup.alpha+= fadeInTime*Time.deltaTime;
-        }
+        CircleFadeSetup();
     }
 
     void CircleChange(float circleTimer)
@@ -127,7 +133,7 @@ public class VisualCircleMove : MonoBehaviour
         }
         if(outTextFadeOut)
         {
-            outText.alpha-=Time.deltaTime*outTextFadeOutSpeed;
+            outText.alpha-=Time.deltaTime/outTextFadeOutSpeed;
         }
     }
 
@@ -141,4 +147,30 @@ public class VisualCircleMove : MonoBehaviour
         inText.alpha = 0;
         outTextFadeOut = true;
     }
+
+    public void TextFadeSwitch(bool state)
+    {
+        textFade = state;
+    }
+
+    void CircleFadeSetup()
+    {
+        if(circleVisual)
+        {
+            
+            circleGroup.alpha+= Time.deltaTime/visualfadeInTimePerSecond;
+        }
+
+        if(!circleVisual)
+        {
+            
+            circleGroup.alpha-= Time.deltaTime/visualfadeOutTimePerSecond;
+        }
+    }
+
+    public void CircleVisualSwitch(bool state)
+    {
+        circleVisual = state;
+    }
+
 }
