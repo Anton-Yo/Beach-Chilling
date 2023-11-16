@@ -66,7 +66,9 @@ public class ExperienceManager : MonoBehaviour
             if(experienceTimer <= fadeToBlackTime && !fadeToBlackUI.activeSelf && !noFinish) //Start the fade to black sequence
             {
                 Debug.Log("Beginning fade in effect");
-                StartCoroutine(FadeToBlack());
+                //COMMENTED OUT BECAUSE IT DOESNT WORK ON HEADSET
+                //StartCoroutine(FadeToBlack()); 
+       
             }
 
             if(experienceTimer <= 0 && !noFinish) //Stop the application
