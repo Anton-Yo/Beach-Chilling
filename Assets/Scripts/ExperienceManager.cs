@@ -16,8 +16,11 @@ public class ExperienceManager : MonoBehaviour
     private float experienceTimer;
 
     [SerializeField] private float timeB4VisualShows;
+    [SerializeField] private float fadeToBlackTime;
     [SerializeField] private GameObject visualCircle;
 
+    #region Singleton Setup
+    //Singleton Setup
     static private ExperienceManager instance;
     static public ExperienceManager Instance
     {
@@ -34,18 +37,20 @@ public class ExperienceManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-    }
+    } 
 
-    [SerializeField] private GameObject fadeToBlack;
+    #endregion Singleton Setup
+
+    [SerializeField] private GameObject fadeToBlackUI;
     // Start is called before the first frame update
     void Start()
     {
         experienceTimer = experienceLength;
         StartCoroutine(ShowVisualCorountine());
 
-        if(fadeToBlack.activeSelf)
+        if(fadeToBlackUI.activeSelf)
         {
-            fadeToBlack.SetActive(false);
+            fadeToBlackUI.SetActive(false);
         }
        
     }
@@ -58,7 +63,13 @@ public class ExperienceManager : MonoBehaviour
         {
             experienceTimer -= Time.deltaTime;
 
-            if(experienceTimer <= 0 && !noFinish)
+            if(experienceTimer <= fadeToBlackTime && !fadeToBlackUI.activeSelf && !noFinish) //Start the fade to black sequence
+            {
+                Debug.Log("Beginning fade in effect");
+                StartCoroutine(FadeToBlack());
+            }
+
+            if(experienceTimer <= 0 && !noFinish) //Stop the application
             {
                 Debug.Log("Experience Ended");
                 Application.Quit();
@@ -66,7 +77,26 @@ public class ExperienceManager : MonoBehaviour
         } 
     }
 
-    private IEnumerator ShowVisualCorountine()
+    private IEnumerator FadeToBlack() //Slowly fade in a black image to simulate a fade to black finish
+    {   
+        fadeToBlackUI.SetActive(true);
+        Image image = fadeToBlackUI.GetComponent<Image>();
+        float currentAlpha = 0;
+        Color imageColour;
+
+        while(image.color.a < 1)
+        {
+            imageColour = image.color;
+            currentAlpha = imageColour.a + Time.deltaTime/fadeToBlackTime; //Supposedly, the alpha of the black screen will go from 0 -> 1 over 5 seconds
+            imageColour.a = currentAlpha;
+            image.color = imageColour;
+            yield return 0;
+        }
+
+        yield break;
+    }
+
+    private IEnumerator ShowVisualCorountine() //Set the visual circle visible after a delay
     {
         yield return new WaitForSeconds(timeB4VisualShows);
         visualCircle.SetActive(true);

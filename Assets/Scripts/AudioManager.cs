@@ -20,8 +20,11 @@ public class AudioManager : MonoBehaviour
 
 
     [Header("Other Stuff")]
+    [Tooltip("Bird sounds start X seconds into the experience")] 
     [SerializeField] private float firstBirdSound = 2f;
+    [Tooltip("Bird sounds occur every randomly every min-max range of ")] 
     [SerializeField] private float minTimeBetweenBird = 5f;
+    [Tooltip("Bird sounds occur every randomly every min-max range of ")] 
     [SerializeField] private float maxTimeBetweenBird = 10f;
 
     private bool startedBirdCoroutine = false;
@@ -51,11 +54,11 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(BeginScriptCorountine());
         birdTimer = firstBirdSound;
         StartCoroutine(TreeRustleSoundCoroutine());
+
+        //Coroutines for fading out sounds
         StartCoroutine(BirdSoundTimeout());
         StartCoroutine(WindSoundTimeout());
         StartCoroutine(FadeOutAllAudio());
-        
-       // InvokeRepeating("PlayBirdSound", firstBirdSound, Random.Range(minTimeBetweenBird, maxTimeBetweenBird));
     }
 
     // Update is called once per frame
@@ -97,28 +100,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private IEnumerator BeginScriptCorountine()
+    private IEnumerator BeginScriptCorountine() //plays the script atfer a short delay
     {
         yield return new WaitForSeconds(timeB4ScriptStarts);
         speakingSound.Play();
     }
 
-    private IEnumerator BirdSoundTimeout() //stop playing bird sounds specified amount from end
-    {
-        yield return new WaitForSeconds(ExperienceManager.Instance.ExperienceLength - stopBirdSound);
-        playBirdSound = false;
-    }
-
-    private IEnumerator WindSoundTimeout() //stop playing bird sounds specified amount from end -- Fade this one out
-    {
-        yield return new WaitForSeconds(ExperienceManager.Instance.ExperienceLength - stopWindSound);
-        //windSound.Stop();
-        Debug.Log("Wind is fading out");
-        StartCoroutine(FadeOut(backgroundWindSound, 10f, 0f));
-    }
-
-
-    private IEnumerator TreeRustleSoundCoroutine()
+    private IEnumerator TreeRustleSoundCoroutine() //Plays a short/long tree rustle sound every X seconds and changes the pitch each time
     {
         while(playTreeSound)
         {
@@ -139,7 +127,22 @@ public class AudioManager : MonoBehaviour
         } 
     }
 
-    private IEnumerator FadeOutAllAudio()
+    #region Sound Timeouts
+     private IEnumerator BirdSoundTimeout() //stop playing bird sounds at specified amount from end
+    {
+        yield return new WaitForSeconds(ExperienceManager.Instance.ExperienceLength - stopBirdSound);
+        playBirdSound = false;
+    }
+
+    private IEnumerator WindSoundTimeout() //stop playing wind sound at specified amount from end -- Fade this one out
+    {
+        yield return new WaitForSeconds(ExperienceManager.Instance.ExperienceLength - stopWindSound);
+        //windSound.Stop();
+        Debug.Log("Wind is fading out");
+        StartCoroutine(FadeOut(backgroundWindSound, 10f, 0f));
+    }
+
+    private IEnumerator FadeOutAllAudio() //Calls each audio individually to fade out to a specified volume
     {
         Debug.Log("Corountine fade out all audio started");
         yield return new WaitForSeconds(ExperienceManager.Instance.ExperienceLength - reduceVolumeOfAllSoundsAt);
@@ -154,7 +157,7 @@ public class AudioManager : MonoBehaviour
 
     //Heavily inspired by https://johnleonardfrench.com/how-to-fade-audio-in-unity-i-tested-every-method-this-ones-the-best/#:~:text=There's%20no%20separate%20function%20for,script%20will%20do%20the%20rest. 
     //Because this was much better than other methods I've used
-    private IEnumerator FadeOut(AudioSource audio, float duration, float target)
+    private IEnumerator FadeOut(AudioSource audio, float duration, float target) //fades out a specific audio clip over time
     {
         Debug.Log(audio.name +  " is fading out");
         float currentTime = 0;
@@ -169,6 +172,7 @@ public class AudioManager : MonoBehaviour
         }
 
         yield break;
-
     }
+
+    #endregion Sound Timeouts
 }
